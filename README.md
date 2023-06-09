@@ -24,23 +24,23 @@ Great weather apps do these two things:
 1. Pull weather data from a data source
 1. Display the weather in readable, compelling way
 
-![DuckDuckGo's weather modal, which features city name, temperature reading, and the weather. Some icons show sunny weather, some icons show rainy weather, and some show cloudy weather.](ada-project-docs/assets/example-duckduckgo.png)  
+![DuckDuckGo's weather modal, which features city name, temperature reading, and the weather. Some icons show sunny weather, some icons show rainy weather, and some show cloudy weather.](ada-project-docs/assets/example-duckduckgo.png)
 _Fig. DuckDuckGo's weather modal, which features city name, temperature reading, and weather icons._
 
 Our goal is to create a fun, small weather app that focuses on displaying the weather.
 
 Our weather app will set the weather using user interaction and get the weather from a 3rd party API, OpenWeather.
 
-![Example weather app: The temperature reads 62, in yellow text. The selected dropdown for "Sky" is "Cloudy." There is a depiction of cloudy weather. The city name is "Hoboken." The header reads "Hoboken."](ada-project-docs/assets/cloudy-62.png)  
+![Example weather app: The temperature reads 62, in yellow text. The selected dropdown for "Sky" is "Cloudy." There is a depiction of cloudy weather. The city name is "Hoboken." The header reads "Hoboken."](ada-project-docs/assets/cloudy-62.png)
 _Fig. Example weather app displaying the weather for Hoboken._
 
-![Example weather app: The temperature reads 85, in red text. The selected dropdown for "Sky" is "Sunny." There is a depiction of sunny weather. The city name is "Santo Domingo" The header reads "Santo Domingo."](ada-project-docs/assets/santo-domingo-85.png)  
+![Example weather app: The temperature reads 85, in red text. The selected dropdown for "Sky" is "Sunny." There is a depiction of sunny weather. The city name is "Santo Domingo" The header reads "Santo Domingo."](ada-project-docs/assets/santo-domingo-85.png)
 _Fig. Example weather app displaying the weather for Santo Domingo._
 
-![Example weather app: The temperature reads 38, in teal text. The selected dropdown for "Sky" is "Snowy." There is a depiction of snowy weather. The city name is "Bozeman." The header reads "Bozeman."](ada-project-docs/assets/snow-38.png)  
+![Example weather app: The temperature reads 38, in teal text. The selected dropdown for "Sky" is "Snowy." There is a depiction of snowy weather. The city name is "Bozeman." The header reads "Bozeman."](ada-project-docs/assets/snow-38.png)
 _Fig. Example weather app displaying the weather for Bozeman._
 
-![Example weather app: The temperature reads 49, in teal text. The selected dropdown for "Sky" is "Rainy." There is a depiction of rainy weather. The city name is "Seattle." The header reads "Seattle."](ada-project-docs/assets/rainy-49.png)  
+![Example weather app: The temperature reads 49, in teal text. The selected dropdown for "Sky" is "Rainy." There is a depiction of rainy weather. The city name is "Seattle." The header reads "Seattle."](ada-project-docs/assets/rainy-49.png)
 _Fig. Example weather app displaying the weather for Seattle._
 
 ## How to Complete and Submit
@@ -75,9 +75,9 @@ This should be done during the Wave 1 initial setup of your `index.html` page.
 
 ## Content Requirements
 
-For this project, there are no requirements around color schemes, font choices, or layouts. 
+For this project, there are no requirements around color schemes, font choices, or layouts.
 
-Note that applying styles with CSS is one of many learning goals of this project -- it is not the central learning goal. You may enjoy being creative with styles, but we encourage you to not concern yourself with getting the styles perfect. Remember, you can always choose to continue working on styling after you've completed all functional requirements. 
+Note that applying styles with CSS is one of many learning goals of this project -- it is not the central learning goal. You may enjoy being creative with styles, but we encourage you to not concern yourself with getting the styles perfect. Remember, you can always choose to continue working on styling after you've completed all functional requirements.
 
 However, _at a minimum_, your project must contain these elements:
 

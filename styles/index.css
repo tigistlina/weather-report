@@ -1,164 +1,92 @@
-h2 {
-    margin: 0 auto 2rem auto;
+#top {
+  background-color: red;
+  height: 30vh;
 }
 
-body {
-display: grid;
-grid-template-columns: 1fr 2fr;
-grid-template-rows: auto auto auto auto;
-grid-gap: 1rem;
-
-font-family: "Rubik", sans-serif;
-font-size: 18px;
-background-color: #1b69f9;
-margin: 2rem;
+#buttom {
+  background-color: blue;
+  height: 70vh;
+  display: flex;
 }
 
-.header__header {
-color: white;
-grid-column: span 3;
-display: flex;
-align-items: center;
-margin: 2rem auto 3rem 0;
+#buttom--left {
+  background-color: green;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.header__header > h1 {
-margin-right: 2rem;
-font-size: 3em;
+#buttom--right {
+  background-color: yellow;
+  width: 75vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://images.unsplash.com/photo-1685472065771-f57d15b4c585?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODYyNTMzODB8&ixlib=rb-4.0.3&q=85);
+  background-size: 100vmin;
 }
 
-.header__city-name {
-font-style: oblique;
-font-size: 2rem;
+#buttom--left--temp,
+#buttom--left--sky,
+#buttom-left--city {
+  background-color: white;
+  width: 80%;
+  /* text-align: center; */
+  padding: 15px 10px;
 }
 
-.header__city-name::before,
-.header__city-name::after {
-content: "✨";
+/* #middle--left--temp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-;
+
+  } */
+
+#temp--title,
+#sky--title,
+#city--title {
+  /*   background-color: pink; */
+  display: flex;
+  justify-content: center;
+  padding: 0 0 10px 0;
 }
 
-.temperature__section,
-.sky__section,
-.city-name__section {
-border-radius: 8px;
-padding: 2rem;
-background-color: white;
+#temp--controls,
+#sky--controls {
+  /*   background-color: gray;  */
+  display: flex;
+  justify-content: space-around;
+
 }
 
-.temperature__section {
-grid-row: 2;
+#city--controls {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
 }
 
-.temperature__section button {
-    background-color: #1b69f9;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 10px
+#reset-button {
+  padding: 10px;
+  width: 80px;
 }
 
-.sky__section {
-grid-row: 3;
+#city-display {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 15px 10px;
+  width: 250px;
+  height: 50px;
+  font-size: x-large;
+  text-align: center;
+  line-height: 50px;
 }
 
-.city-name__section {
-grid-row: 4;
-}
-
-.garden__section {
-grid-row: 2 / span 3;
-grid-column: 2;
-text-align: center;
-align-self: center;
-}
-
-.temperature__content {
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-/* justify-content: center; */
-}
-
-#tempValue {
-font-size: 3rem;
-margin-left: 1.5rem;
-/* padding-right: 1rem; */
-/* margin-right: 1.5rem; */
-}
-
-.temperature__controls {
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-.garden__section > h2 {
-color: white;
-}
-
-.garden__content {
-min-height: 200px;
-max-width: fit-content;
-margin: auto;
-padding: 2rem;
-
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-
-border-radius: 8px;
-font-size: 2em;
-}
-
-.city-name__reset-btn {
-border: 0;
-background-color: #1655cc;
-color: white;
-border-radius: 8px;
-padding: 1rem;
-font-family: "Rubik", sans-serif;
-}
-
-.red {
-color: red;
-}
-
-.orange {
-color: orange;
-}
-
-.yellow {
-color: gold;
-}
-
-.yellow-green {
-color: yellowgreen;
-}
-
-.green {
-color: green;
-}
-
-.teal {
-color: teal;
-}
-
-.cloudy {
-background-color: lightgrey;
-}
-
-.sunny {
-background-color: rgb(221, 255, 255);
-}
-
-.rainy {
-background-color: lightblue;
-}
-
-.snowy {
-background-color: lightsteelblue;
+#top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  background-image: url(https://images.unsplash.com/photo-1542349314-b0ceb4d90f2d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODYyNTQ4ODh8&ixlib=rb-4.0.3&q=85);
+  background-size: 100vmin;
 }

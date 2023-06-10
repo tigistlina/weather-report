@@ -10,7 +10,7 @@
 }
 
 #buttom--left {
-  background-color: green;
+  background-color: pink;
   width: 25vw;
   display: flex;
   flex-direction: column;
@@ -24,8 +24,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(https://images.unsplash.com/photo-1685472065771-f57d15b4c585?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODYyNTMzODB8&ixlib=rb-4.0.3&q=85);
-  background-size: 100vmin;
+  background-image: url(../assets/landscape/mark-harpur-K2s_YE031CA-unsplash.jpg);
+  background-size: content;
 }
 
 #buttom--left--temp,
@@ -88,7 +88,7 @@
   justify-content: center;
   font-size: xx-large;
   background-image: url(https://images.unsplash.com/photo-1542349314-b0ceb4d90f2d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODYyNTQ4ODh8&ixlib=rb-4.0.3&q=85);
-  background-size: 100vmin;
+  background-size: content;
 }
 body {
   margin: 0;

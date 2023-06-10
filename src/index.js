@@ -35,15 +35,23 @@ const changeBackgrounds = () => {
         state.backgroundColor.style.backgroundColor = 'teal';
     }
 }
+// DISPLAY CITY CHANGES ON INPUT
+const updateCity = () => {
+    let cityInput = document.getElementById('city-input').value
+    document.getElementById('city-display--name').textContent = cityInput
+}
 // REGISTER EVENT LISTENER
 const registerEventHandler = () => {
     const tempDecrease = document.getElementById('decrease-t');
-    tempDecrease.addEventListener('click', decreaseTemp)
-    tempDecrease.addEventListener('click', changeBackgrounds)
+    tempDecrease.addEventListener('click', decreaseTemp);
+    tempDecrease.addEventListener('click', changeBackgrounds);
 
     const tempIncrease = document.getElementById('increase-t');
-    tempIncrease.addEventListener('click', increaseTemp)
-    tempIncrease.addEventListener('click', changeBackgrounds)
+    tempIncrease.addEventListener('click', increaseTemp);
+    tempIncrease.addEventListener('click', changeBackgrounds);
+
+    const inputCity = document.getElementById('city-input');
+    inputCity.addEventListener('keyup', updateCity);
 }
 
 document.addEventListener('DOMContentLoaded', registerEventHandler)

@@ -19,7 +19,7 @@
         <div id="buttom">
             <div id="buttom--left">
                 <div id="buttom--left--temp">
-                    <div id="temp--title">Temp</div>
+                    <h1 id="temp--title">Temp</h1>
                     <div id="temp--controls">
                         <button id="decrease-t">down</button>
                         <div id="temperature">70</div>
@@ -27,9 +27,10 @@
                     </div>
                 </div>
                 <div id="buttom--left--sky">
-                    <div id="sky--title">Sky</div>
+                    <h1 id="sky--title">Sky</h1>
                     <div id="sky--controls">
                         <select name="sky-options" id="sky--options">
+                            <option value="skyoption">sky option</option>
                             <option value="rainy">Rainy</option>
                             <option value="sunny">Sunny</option>
                             <option value="snowy">Snowy</option>
@@ -38,10 +39,10 @@
                     </div>
                 </div>
                 <div id="buttom-left--city">
-                    <div id="city--title">City</div>
+                    <h1 id="city--title">City</h1>
                     <div id="city--controls">
                         <form action="/url" method="GET">
-                            <input id="city-input" type="text" name="city_name" placeholder="Please enter your city" required />
+                            <input id="city-input" type="text" name="city_name" placeholder="----location required----" required />
                             <button id="submit-button" type="submit">Submit</button>
                         </form>
                         <div id="reset-button">
@@ -52,7 +53,7 @@
             </div>
             <div id="buttom--right">
                 <div id="city-display">
-                    <div id="city-display--name">Current City</div>
+                    <div id="city-display--name">Current City Display</div>
                 </div>
             </div>
         </div>

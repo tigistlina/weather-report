@@ -35,9 +35,11 @@ const skyBackground = () => {
     } else if(condition == 'rainy') {
         state.skyImg.style.backgroundImage = 'url(assets/sky/eutah-mizushima-F-t5EpfQNpk-unsplash.jpg)';
     } else if(condition == 'snowy'){
-        state.skyImg.style.backgroundImage = 'url(assets/sky/fabrizio-conti-Mbm0WnJ5emc-unsplash.jpg)';
+        state.skyImg.style.backgroundImage = 'url(assets/sky/jainam-sheth-r0GVOKi-R1E-unsplash.jpg)';
     } else if(condition == 'cloudy') {
         state.skyImg.style.backgroundImage = 'url(assets/sky/daoudi-aissa-Pe1Ol9oLc4o-unsplash.jpg)';
+    } else {
+        state.skyImg.style.backgroundImage = 'url(assets/sky/jelleke-vanooteghem-gnxb59lGU1M-unsplash.jpg)';
     }
     }
 

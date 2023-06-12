@@ -39,7 +39,6 @@ const skyBackground = () => {
     } else if(condition == 'cloudy') {
         state.skyImg.style.backgroundImage = 'url(assets/sky/daoudi-aissa-Pe1Ol9oLc4o-unsplash.jpg)';
     }
-
     }
 
 // CHANGE BACKGROND COLOR  AND IMAGE WITH TEMP CHANGE
@@ -88,7 +87,7 @@ const submitLocationInput = () => {
 // API CALLS
 // loaction api
 const getLatLon = () => {
-    axios.get('http://127.0.0.1:5000/location', {
+    axios.get('https://weather-report-proxy-884k.onrender.com/location', {
         params: {
             q: state.location,
         },
@@ -107,7 +106,7 @@ const getLatLon = () => {
 
 // weather api call
 const getWeather = () => {
-    axios.get('http://127.0.0.1:5000/weather', {
+    axios.get('https://weather-report-proxy-884k.onrender.com/weather', {
         params: {
             lat: state.lat,
             lon: state.lon,

@@ -6,6 +6,8 @@ const state = {
     location: null,
     lat: null,
     lon: null,
+    skyCondition: document.getElementById('sky--options'),
+    skyImg: document.getElementById('top')
 }
 // changes the temp on the page
 const changesTempDisplay = () => {
@@ -23,12 +25,29 @@ const decreaseTemp = () => {
     changesTempDisplay()
 };
 
+// sky background change with sky option
+const skyBackground = () => {
+    console.log('skyBackground')
+    const condition = state.skyCondition.value
+    if(condition == 'sunny') {
+        console.log('sunny')
+        state.skyImg.style.backgroundImage = 'url(assets/sky/kyaw-zay-ya-8vHAfhWoqEQ-unsplash.jpg)';
+    } else if(condition == 'rainy') {
+        state.skyImg.style.backgroundImage = 'url(assets/sky/eutah-mizushima-F-t5EpfQNpk-unsplash.jpg)';
+    } else if(condition == 'snowy'){
+        state.skyImg.style.backgroundImage = 'url(assets/sky/fabrizio-conti-Mbm0WnJ5emc-unsplash.jpg)';
+    } else if(condition == 'cloudy') {
+        state.skyImg.style.backgroundImage = 'url(assets/sky/daoudi-aissa-Pe1Ol9oLc4o-unsplash.jpg)';
+    }
+
+    }
+
+
 // CHANGE BACKGROND COLOR  AND IMAGE WITH TEMP CHANGE
 const changeBackgrounds = () => {
     if (state.currentTemp >= 80) {
         state.backgroundColor.style.backgroundColor = 'red';
         state.landscapeImg.style.backgroundImage = 'url(assets/landscape/cody-doherty-AeqlmVWtzFA-unsplash.jpg)';
-
     } else if (state.currentTemp >= 70) {
         state.backgroundColor.style.backgroundColor = 'orange';
         state.landscapeImg.style.backgroundImage = 'url(assets/landscape/alexandr-hovhannisyan-RkOtjbPuHZw-unsplash.jpg)';
@@ -116,6 +135,8 @@ const registerEventHandler = () => {
 
     const submitButton = document.getElementById('submit-button');
     submitButton.addEventListener('click', submitLocationInput);
+
+    state.skyCondition.addEventListener('change', skyBackground);
 }
 
 document.addEventListener('DOMContentLoaded', registerEventHandler)

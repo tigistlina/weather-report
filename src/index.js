@@ -42,7 +42,6 @@ const skyBackground = () => {
 
     }
 
-
 // CHANGE BACKGROND COLOR  AND IMAGE WITH TEMP CHANGE
 const changeBackgrounds = () => {
     if (state.currentTemp >= 80) {
@@ -67,7 +66,13 @@ const updateCity = () => {
     document.getElementById('city-display--name').textContent = state.cityInput.value
 }
 
-// // wave 4 - calling API
+// reset city
+const resetCity = () => {
+    state.cityInput.value = "";
+    updateCity();
+}
+
+// calling API
 // Convert from Kel to Fahren
 const handleRealTemp = async (kelvin) => {
     state.currentTemp = Math.floor((kelvin - 273.15) * 9/5 + 32 );
@@ -137,6 +142,10 @@ const registerEventHandler = () => {
     submitButton.addEventListener('click', submitLocationInput);
 
     state.skyCondition.addEventListener('change', skyBackground);
+
+    const resetButton = document.getElementById('reset-button');
+    resetButton.addEventListener('click', resetCity);
+
 }
 
 document.addEventListener('DOMContentLoaded', registerEventHandler)

@@ -53,12 +53,13 @@ const changeBackgrounds = () => {
         state.landscapeImg.style.backgroundImage = 'url(assets/landscape/alexandr-hovhannisyan-RkOtjbPuHZw-unsplash.jpg)';
     } else if (state.currentTemp >= 60) {
         state.backgroundColor.style.backgroundColor = 'yellow';
-        state.landscapeImg.style.backgroundImage = 'url(assets/landscape/andrew-neel-a_K7R1kugUE-unsplash.jpg)';
+        state.landscapeImg.style.backgroundImage = 'url(assets/landscape/alysa-bajenaru-P103bmFilDA-unsplash.jpg)';
     } else if (state.currentTemp >= 50) {
         state.backgroundColor.style.backgroundColor = 'green';
-        state.landscapeImg.style.backgroundImage = 'url(assets/landscape/joel-jasmin-forestbird-4S3iMBIappo-unsplash.jpg)';
+        state.landscapeImg.style.backgroundImage = 'url(assets/landscape/andrew-neel-a_K7R1kugUE-unsplash.jpg)';
     } else {
         state.backgroundColor.style.backgroundColor = 'teal';
+        state.landscapeImg.style.backgroundImage = 'url(assets/landscape/joel-jasmin-forestbird-4S3iMBIappo-unsplash.jpg)';
     }
 }
 

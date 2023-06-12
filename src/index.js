@@ -31,7 +31,7 @@ const skyBackground = () => {
     const condition = state.skyCondition.value
     if(condition == 'sunny') {
         console.log('sunny')
-        state.skyImg.style.backgroundImage = 'url(assets/sky/kyaw-zay-ya-8vHAfhWoqEQ-unsplash.jpg)';
+        state.skyImg.style.backgroundImage = 'url(assets/sky/rajiv-bajaj-i4QIqfcTkN8-unsplash.jpg)';
     } else if(condition == 'rainy') {
         state.skyImg.style.backgroundImage = 'url(assets/sky/eutah-mizushima-F-t5EpfQNpk-unsplash.jpg)';
     } else if(condition == 'snowy'){

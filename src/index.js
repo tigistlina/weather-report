@@ -53,7 +53,7 @@ const changeBackgrounds = () => {
         state.backgroundColorSky.style.backgroundColor = 'red';
         state.backgroundColorCity.style.backgroundColor = 'red';
         state.landscapeImg.style.backgroundImage = 'url(assets/landscape/cody-doherty-AeqlmVWtzFA-unsplash.jpg)';
-        state.cityDisplayColor.style.color = "black";
+        state.cityDisplayColor.style.color = "green";
     } else if (state.currentTemp >= 70) {
         state.backgroundColorTemp.style.backgroundColor = 'orange';
         state.backgroundColorSky.style.backgroundColor = 'orange';
@@ -71,7 +71,7 @@ const changeBackgrounds = () => {
         state.backgroundColorSky.style.backgroundColor = 'green';
         state.backgroundColorCity.style.backgroundColor = 'green';
         state.landscapeImg.style.backgroundImage = 'url(assets/landscape/andrew-neel-a_K7R1kugUE-unsplash.jpg)';
-        state.cityDisplayColor.style.color = "white";
+        state.cityDisplayColor.style.color = "brown";
     } else {
         state.backgroundColorTemp.style.backgroundColor = 'teal';
         state.backgroundColorSky.style.backgroundColor = 'teal';

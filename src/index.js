@@ -104,6 +104,7 @@ const getLatLon = () => {
     })
     .catch((error) => {
         console.log(error)
+        console.log("error in get latlon")
     })
 }
 
@@ -124,6 +125,7 @@ const getWeather = () => {
     })
     .catch((error) =>{
         console.log(error)
+        console.log("error getWeather")
     })
 }
 

@@ -1,13 +1,16 @@
 const state = {
     currentTemp: 70,
-    backgroundColor: document.getElementById('buttom--left'),
-    landscapeImg: document.getElementById('buttom--right'),
+    backgroundColorTemp: document.getElementById('buttom--left--temp'),
+    backgroundColorSky: document.getElementById('buttom--left--sky'),
+    backgroundColorCity: document.getElementById('buttom-left--city'),
+    landscapeImg: document.getElementById('buttom'),
     cityInput: document.getElementById('city-input'),
     location: null,
     lat: null,
     lon: null,
     skyCondition: document.getElementById('sky--options'),
-    skyImg: document.getElementById('top')
+    skyImg: document.getElementById('top'),
+    cityDisplayColor: document.getElementById('city-display'),
 }
 // changes the temp on the page
 const changesTempDisplay = () => {
@@ -46,20 +49,35 @@ const skyBackground = () => {
 // CHANGE BACKGROND COLOR  AND IMAGE WITH TEMP CHANGE
 const changeBackgrounds = () => {
     if (state.currentTemp >= 80) {
-        state.backgroundColor.style.backgroundColor = 'red';
+        state.backgroundColorTemp.style.backgroundColor = 'red';
+        state.backgroundColorSky.style.backgroundColor = 'red';
+        state.backgroundColorCity.style.backgroundColor = 'red';
         state.landscapeImg.style.backgroundImage = 'url(assets/landscape/cody-doherty-AeqlmVWtzFA-unsplash.jpg)';
+        state.cityDisplayColor.style.color = "black";
     } else if (state.currentTemp >= 70) {
-        state.backgroundColor.style.backgroundColor = 'orange';
+        state.backgroundColorTemp.style.backgroundColor = 'orange';
+        state.backgroundColorSky.style.backgroundColor = 'orange';
+        state.backgroundColorCity.style.backgroundColor = 'orange';
         state.landscapeImg.style.backgroundImage = 'url(assets/landscape/alexandr-hovhannisyan-RkOtjbPuHZw-unsplash.jpg)';
+        state.cityDisplayColor.style.color = "red";
     } else if (state.currentTemp >= 60) {
-        state.backgroundColor.style.backgroundColor = 'yellow';
+        state.backgroundColorTemp.style.backgroundColor = 'yellow';
+        state.backgroundColorSky.style.backgroundColor = 'yellow';
+        state.backgroundColorCity.style.backgroundColor = 'yellow';
         state.landscapeImg.style.backgroundImage = 'url(assets/landscape/alysa-bajenaru-P103bmFilDA-unsplash.jpg)';
+        state.cityDisplayColor.style.color = "black";
     } else if (state.currentTemp >= 50) {
-        state.backgroundColor.style.backgroundColor = 'green';
+        state.backgroundColorTemp.style.backgroundColor = 'green';
+        state.backgroundColorSky.style.backgroundColor = 'green';
+        state.backgroundColorCity.style.backgroundColor = 'green';
         state.landscapeImg.style.backgroundImage = 'url(assets/landscape/andrew-neel-a_K7R1kugUE-unsplash.jpg)';
+        state.cityDisplayColor.style.color = "white";
     } else {
-        state.backgroundColor.style.backgroundColor = 'teal';
+        state.backgroundColorTemp.style.backgroundColor = 'teal';
+        state.backgroundColorSky.style.backgroundColor = 'teal';
+        state.backgroundColorCity.style.backgroundColor = 'teal';
         state.landscapeImg.style.backgroundImage = 'url(assets/landscape/joel-jasmin-forestbird-4S3iMBIappo-unsplash.jpg)';
+        state.cityDisplayColor.style.color = "white";
     }
 }
 
